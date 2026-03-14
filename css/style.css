@@ -182,7 +182,7 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     min-width: 0;
     padding: 0.35rem 0.45rem 0.35rem 0.35rem;
     border-radius: 18px;
@@ -206,6 +206,7 @@ header {
     flex-direction: column;
     line-height: 1;
     gap: 0.18rem;
+    min-width: 0;
 }
 
 .logo-title {
@@ -214,6 +215,7 @@ header {
     color: #ffffff;
     letter-spacing: -0.02em;
     font-weight: 800;
+    white-space: nowrap;
 }
 
 .logo-subtitle {
@@ -223,6 +225,7 @@ header {
     font-weight: 800;
     color: rgba(240, 141, 104, 0.9);
     padding-top: 4px;
+    white-space: nowrap;
 }
 
 nav {
@@ -1927,6 +1930,10 @@ footer::before {
         padding-right: 0.1rem;
     }
 
+    .logo-text {
+        gap: 0.1rem;
+    }
+
     .logo img {
         width: 42px;
         height: 42px;
@@ -1944,12 +1951,13 @@ footer::before {
     }
 
     .logo-title {
-        font-size: 0.98rem;
+        font-size: 0.9rem;
     }
 
     .logo-subtitle {
-        font-size: 0.58rem;
-        letter-spacing: 0.1em;
+        font-size: 0.5rem;
+        letter-spacing: 0.08em;
+        padding-top: 2px;
     }
 
     .menu-toggle {
@@ -2041,12 +2049,24 @@ footer::before {
 }
 
 @media (max-width: 420px) {
-    .logo-subtitle {
-        display: none;
+    .header-container {
+        gap: 0.6rem;
     }
 
     .logo-title {
-        font-size: 0.92rem;
+        font-size: 0.82rem;
+    }
+
+    .logo-subtitle {
+        display: block;
+        font-size: 0.46rem;
+        letter-spacing: 0.06em;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
     }
 
     .hero-copy h1,
