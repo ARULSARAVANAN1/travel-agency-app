@@ -70,7 +70,7 @@ function formatSubmittedAt_(submittedAt) {
   return Utilities.formatDate(
     submittedAt,
     Session.getScriptTimeZone(),
-    "dd:MM:yyyy hh:mm:ss a"
+    "dd/MM/yyyy hh:mm:ss a"
   );
 }
 
