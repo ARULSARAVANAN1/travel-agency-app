@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const mobileBreakpoint = 980;
-    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHOx0Vg5DDxyJjqeyX7itjfrnyzTCruvXPYUvZf2Z-8Ps5sGusIuV0dc8YdkPULw-aXA/exec";
+    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFHNxEWdf9Cy0tGZ6ZE60KXWsVq7r0BRtGToziV_m5nieufdzOswnxoCE7rxvXzmzNTA/exec";
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
     const header = document.querySelector("header");
@@ -84,12 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const fields = [name, phone, email, tripDetails];
         let isSubmitting = false;
-
-        function encodeFormData(data) {
-            return Object.keys(data).map(function (key) {
-                return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
-            }).join("&");
-        }
 
         function getErrorElement(field) {
             return contactForm.querySelector("#" + field.id + "Error");
@@ -263,19 +257,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
+            const formPayload = new URLSearchParams();
+            formPayload.append("name", name ? name.value.trim() : "");
+            formPayload.append("number", phone ? phone.value.trim() : "");
+            formPayload.append("email", email ? email.value.trim() : "");
+            formPayload.append("tripDetails", tripDetails ? tripDetails.value.trim() : "");
+
             fetch(GOOGLE_APPS_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
-                body: encodeFormData({
-                    name: name ? name.value.trim() : "",
-                    number: phone ? phone.value.trim() : "",
-                    email: email ? email.value.trim() : "",
-                    tripDetails: tripDetails ? tripDetails.value.trim() : "",
-                    page: window.location.pathname
-                })
+                body: formPayload
             }).then(function () {
                 contactForm.reset();
 
