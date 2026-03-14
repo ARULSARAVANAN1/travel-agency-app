@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Thilagamani Tours and Travels for Tempo Traveller bookings in Coimbatore and across Tamil Nadu. Call, email, or message us on WhatsApp.">
+    <meta name="keywords" content="contact travel agency Coimbatore, book Tempo Traveller Tamil Nadu, WhatsApp travel booking">
+    <title>Contact | Thilagamani Tours and Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html" aria-label="Thilagamani Tours and Travels Home">
+                <img src="images/Logo-1.png" alt="Thilagamani Tours and Travels">
+                <span class="logo-text">
+                    <span class="logo-title">Thilagamani</span>
+                    <span class="logo-subtitle">Tours and Travels</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fleet.html">Vehicles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content reveal">
+                <span class="eyebrow">Get In Touch</span>
+                <h1>Let us help you plan the right trip, vehicle, and timing.</h1>
+                <p>Reach out for family travel, airport transfers, wedding movement, or custom group itineraries. We are happy to guide you through the options.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-pills">
+                <article class="contact-pill reveal">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with us for quick booking support.</p>
+                        <a class="card-link" href="tel:+919597216046">+91 95972 16046</a>
+                    </div>
+                </article>
+                <article class="contact-pill reveal delay-1">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>Perfect for fast trip details, follow-ups, and confirmations.</p>
+                        <a class="card-link" href="https://wa.me/919597216046?text=Hello%20Thilagamani%20Tours%20and%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20a%20trip%20from%20Coimbatore.%0A%0ATrip%20details%3A%0A-%20Travel%20date%3A%0A-%20Pickup%20location%3A%0A-%20Destination%3A%0A-%20Number%20of%20passengers%3A%0A-%20Vehicle%20needed%3A%20Tempo%20Traveller%20%2F%20Dzire%0A-%20Trip%20type%3A%20One-way%20%2F%20Round%20trip%20%2F%20Multi-day%0A%0APlease%20share%20availability%20and%20price.%20Thank%20you." target="_blank">Start Chat</a>
+                    </div>
+                </article>
+                <article class="contact-pill reveal delay-2">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>NSN Palayam, Coimbatore, Tamil Nadu 641031</p>
+                        <a class="card-link" href="#map">View Map</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="contact-shell">
+                <div class="contact-form reveal">
+                    <h3>Send us your travel requirement</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required minlength="3" maxlength="60" autocomplete="name" placeholder="Enter your full name">
+                            <p class="field-error" id="nameError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="number" required inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="Enter your 10-digit mobile number" pattern="[6-9][0-9]{9}">
+                            <p class="field-error" id="phoneError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email address (optional)">
+                            <p class="field-error" id="emailError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tripDetails">Trip Details</label>
+                            <textarea id="tripDetails" name="tripDetails" required minlength="10" placeholder="Tell us your destination, travel date, group size, and any special requirements."></textarea>
+                            <p class="field-error" id="tripDetailsError" aria-live="polite"></p>
+                        </div>
+
+                        <p class="form-status" id="formStatus" aria-live="polite"></p>
+                        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                    </form>
+                </div>
+
+                <aside class="contact-panel reveal delay-1">
+                    <h3>We are available every day for enquiries and bookings.</h3>
+                    <p>If you need a faster response, calling or messaging on WhatsApp is the quickest way to confirm vehicle options and availability.</p>
+
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 95972 16046</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>thilagamanitravels@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Availability</h4>
+                                <p>Open 24/7 for bookings and trip coordination.</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>NSN Palayam, Coimbatore, Tamil Nadu 641031</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-highlight">
+                        <div class="contact-highlight-head">
+                            <span class="contact-highlight-icon"><i class="fas fa-lightbulb"></i></span>
+                            <h4>Quick Booking Tips</h4>
+                        </div>
+                        <ul class="contact-bullets">
+                            <li>Share passenger count to get the right vehicle suggestion.</li>
+                            <li>Let us know if the trip is one-way, round trip, or multi-day.</li>
+                            <li>WhatsApp works best for quick follow-up and schedule updates.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="map-container reveal delay-2" id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.024492903105!2d76.92247987599782!3d11.111552424736583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7aaf82f92db%3A0xfcd20760b496ad17!2sThilagamani%20Tours%20and%20Travels!5e0!3m2!1sen!2sin!4v1768456628179!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Thilagamani Tours and Travels Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-shell">
+                <div class="cta-content">
+                    <span class="eyebrow">Need a Quick Response?</span>
+                    <h2>Call or WhatsApp us for immediate help with bookings.</h2>
+                    <p>If your trip is coming up soon, send us the destination, date, and passenger count and we will guide you quickly.</p>
+                    <div class="hero-actions">
+                        <a href="tel:+919597216046" class="btn btn-secondary">Call Now</a>
+                        <a href="https://wa.me/919597216046?text=Hello%20Thilagamani%20Tours%20and%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20a%20trip%20from%20Coimbatore.%0A%0ATrip%20details%3A%0A-%20Travel%20date%3A%0A-%20Pickup%20location%3A%0A-%20Destination%3A%0A-%20Number%20of%20passengers%3A%0A-%20Vehicle%20needed%3A%20Tempo%20Traveller%20%2F%20Dzire%0A-%20Trip%20type%3A%20One-way%20%2F%20Round%20trip%20%2F%20Multi-day%0A%0APlease%20share%20availability%20and%20price.%20Thank%20you." class="btn btn-outline" target="_blank">WhatsApp Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <h3>Thilagamani Tours and Travels</h3>
+                <p>Coimbatore-based Tempo Traveller service for families, pilgrims, wedding groups, and corporate teams traveling across Tamil Nadu.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="fleet.html">Vehicles</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> +91 95972 16046</p>
+                <p><i class="fas fa-envelope"></i> thilagamanitravels@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> NSN Palayam, Coimbatore, Tamil Nadu 641031</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Thilagamani Tours and Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919597216046?text=Hello%20Thilagamani%20Tours%20and%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20a%20trip%20from%20Coimbatore.%0A%0ATrip%20details%3A%0A-%20Travel%20date%3A%0A-%20Pickup%20location%3A%0A-%20Destination%3A%0A-%20Number%20of%20passengers%3A%0A-%20Vehicle%20needed%3A%20Tempo%20Traveller%20%2F%20Dzire%0A-%20Trip%20type%3A%20One-way%20%2F%20Round%20trip%20%2F%20Multi-day%0A%0APlease%20share%20availability%20and%20price.%20Thank%20you." class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
