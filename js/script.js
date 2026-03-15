@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const mobileBreakpoint = 980;
-    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzU05WRz4T-2hHAf0Os592TbBoMj3sXHmtqXAAAru-6Si5CCbyBDJMV2-rRh1ngxxv9Tw/exec";
+    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbypugUQNzfPL24-nPMJwaQcKvCIvMCKvZnOttY7wj7R6JO6-ncCV08ae7UJxolABi1Xfg/exec";
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
     const header = document.querySelector("header");
